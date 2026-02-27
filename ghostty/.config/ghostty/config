@@ -1,0 +1,25 @@
+# -------------------------------------------------------------------
+# Font Settings
+# -------------------------------------------------------------------
+font-family = "SF Mono"
+font-size = 26
+
+# -------------------------------------------------------------------
+# Appearance / UI
+# -------------------------------------------------------------------
+theme = tokyonight
+background-opacity = 0.85
+background-blur-radius = 20
+
+# -------------------------------------------------------------------
+# Cursor & Shell Behavior
+# -------------------------------------------------------------------
+# Disables cursor blinking to minimize visual distraction.
+cursor-style-blink = false
+
+# Sets the cursor to a solid, non-blinking block.
+cursor-style = block
+
+# "no-cursor" prevents Shell Integration from overriding your 
+# custom cursor settings (stops the "flickering" issue).
+shell-integration-features = no-cursor
