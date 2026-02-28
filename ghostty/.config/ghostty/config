@@ -11,6 +11,13 @@ theme = tokyonight
 background-opacity = 0.85
 background-blur-radius = 20
 
+window-padding-y = 12
+window-padding-x = 15
+window-padding-balance = true
+
+macos-titlebar-style = hidden
+
+
 # -------------------------------------------------------------------
 # Cursor & Shell Behavior
 # -------------------------------------------------------------------
