@@ -10,11 +10,16 @@ window-padding-x = 15
 window-padding-y = 12
 window-padding-balance = true
 
+# Window Management
+window-save-state = always
+
 # Cursor & Shell Integration
 cursor-style = block
 cursor-style-blink = false
 shell-integration = zsh
+
+# Prevents shell integration from overriding custom cursor settings.
 shell-integration-features = no-cursor
 
-# Automatically copy selected text to the system clipboard.
+# Terminal Behavior
 copy-on-select = clipboard
