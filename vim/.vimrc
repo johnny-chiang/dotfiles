@@ -4,6 +4,8 @@ set hidden                    " Allow switching buffers without saving
 set encoding=utf-8
 set autoread                  " Reload files changed outside Vim (logs)
 set mouse=a                   " Enable mouse for scrolling/resizing
+let g:netrw_dirhistmax = 0    " Disable netrw history (prevents .netrwhist from being created)
+let g:netrw_banner = 0        " Hide the noisy netrw banner
 
 " Visuals & UI
 syntax on                     " Enable syntax highlighting
