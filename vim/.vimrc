@@ -13,6 +13,8 @@ set cursorline                " Highlight current line
 set termguicolors             " Better colors for modern terminals (Ghostty)
 colorscheme catppuccin_mocha
 set background=dark           " Optimized for dark themes
+set splitbelow                " New horizontal splits open below
+set splitright                " New vertical splits open to the right
 
 " Search
 set ignorecase                " Case insensitive search...
@@ -36,16 +38,16 @@ set noswapfile                " Disable swap files (prevents .swp clutter)
 " Keybindings
 let mapleader = "\<Space>"
 
-" " Fast Save/Quit
-" nnoremap <leader>w :w<cr>
-" nnoremap <leader>q :q<cr>
+" Fast Save/Quit
+nnoremap <leader>w :w<cr>
+nnoremap <leader>q :q<cr>
 
 " Clear Search Highlights
 nnoremap <leader><esc> :noh<cr>
 
-" " Buffer Navigation (Switching between different Log/Config files)
-" nnoremap <leader>n :bn<cr>
-" nnoremap <leader>p :bp<cr>
+" Buffer Navigation (Switching between different Log/Config files)
+nnoremap H :bp<cr>
+nnoremap L :bn<cr>
 
 " " Integration
 " " Use system clipboard for yank/paste (Works with your OSC 52 setup)
