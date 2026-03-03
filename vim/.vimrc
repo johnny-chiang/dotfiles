@@ -4,8 +4,6 @@ set hidden                    " Allow switching buffers without saving
 set encoding=utf-8
 set autoread                  " Reload files changed outside Vim (logs)
 set mouse=a                   " Enable mouse for scrolling/resizing
-let g:netrw_dirhistmax = 0    " Disable netrw history (prevents .netrwhist from being created)
-let g:netrw_banner = 0        " Hide the noisy netrw banner
 
 " Visuals & UI
 syntax on                     " Enable syntax highlighting
@@ -32,10 +30,14 @@ set tabstop=2
 set ai                        " Auto indent
 set si                        " Smart indent
 
-" SRE Life Savers
+" File Management
 set undofile                  " Persistent undo (saves after closing file)
 set undodir=~/.vim/undo       " Keep undo files in one place
 set noswapfile                " Disable swap files (prevents .swp clutter)
+
+" Plugins
+let g:netrw_dirhistmax = 0    " Disable netrw history (prevents .netrwhist from being created)
+let g:netrw_banner = 0        " Hide the noisy netrw banner
 
 " Keybindings
 let mapleader = "\<Space>"
@@ -51,6 +53,5 @@ nnoremap <leader><esc> :noh<cr>
 nnoremap H :bp<cr>
 nnoremap L :bn<cr>
 
-" " Integration
-" " Use system clipboard for yank/paste (Works with your OSC 52 setup)
-" set clipboard=unnamedplus
+" Integration
+" set clipboard=unnamedplus     " Use system clipboard for yank/paste (Works with your OSC 52 setup)
