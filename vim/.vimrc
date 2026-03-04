@@ -3,7 +3,6 @@ set nocompatible              " Explicitly use Vim defaults over Vi
 set hidden                    " Allow switching buffers without saving
 set encoding=utf-8
 set autoread                  " Reload files changed outside Vim (logs)
-set mouse=a                   " Enable mouse for scrolling/resizing
 
 " Visuals & UI
 syntax on                     " Enable syntax highlighting
@@ -52,6 +51,23 @@ nnoremap <leader><esc> :noh<cr>
 " Buffer Navigation (Switching between different Log/Config files)
 nnoremap H :bp<cr>
 nnoremap L :bn<cr>
+
+" Restore cursor to the last known position when opening or reloading a file
+augroup vimrc_persistence
+  autocmd!
+  autocmd BufReadPost *
+    \ if line("'\"") > 1 && line("'\"") <= line("$") && &ft !~# 'commit'
+    \ | exe "normal! g`\""
+    \ | endif
+augroup END
+
+" Force Vim to check for file changes when you AltTab back
+" Without this, 'set autoread' sometimes waits until you press a key.
+augroup vimrc_autoread
+  autocmd!
+  autocmd FocusGained,BufEnter *
+    \ if mode() != 'c' | checktime | endif
+augroup END
 
 " Integration
 " set clipboard=unnamedplus     " Use system clipboard for yank/paste (Works with your OSC 52 setup)
