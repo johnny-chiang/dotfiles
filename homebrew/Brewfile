@@ -6,6 +6,9 @@ brew "starship"
 brew "stow"
 # Terminal multiplexer
 brew "tmux"
+
+# Enable Windows-like alt-tab
+cask "alt-tab"
 # Automatic tiling window manager similar to xmonad
 cask "amethyst"
 cask "font-jetbrains-mono-nerd-font"
