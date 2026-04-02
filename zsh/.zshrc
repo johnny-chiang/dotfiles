@@ -19,11 +19,11 @@ fi
 # fnm
 FNM_PATH="/opt/homebrew/opt/fnm/bin"
 if [ -d "$FNM_PATH" ]; then
-  eval "`fnm env`"
+  eval "$(fnm env --use-on-cd)"
 fi
 
 # Added by Antigravity
-export PATH="/Users/johnny/.antigravity/antigravity/bin:$PATH"
+export PATH="$HOME/.antigravity/antigravity/bin:$PATH"
 
 # Starship
 eval "$(starship init zsh)"
@@ -52,7 +52,7 @@ kport() {
   
   if [ -n "$pid" ]; then
     echo "Port $port is occupied by the following PID(s): $pid. Cleaning up..."
-    kill -9 $pid
+    kill -9 "$pid"
     echo "Cleanup complete!"
   else
     echo "Port $port is currently clear; no process is using it."
