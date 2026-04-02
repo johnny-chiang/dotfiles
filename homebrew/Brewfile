@@ -1,3 +1,4 @@
+brew "eza"
 brew "fnm"
 brew "go"
 brew "starship"

@@ -28,6 +28,22 @@ export PATH="/Users/johnny/.antigravity/antigravity/bin:$PATH"
 # Starship
 eval "$(starship init zsh)"
 
+# eza — modern replacement for ls
+# Use eza when outputting to terminal; fall back to plain ls for pipes/files
+ls() {
+  if [ -t 1 ]; then
+    # --icons=always: stable icons in any environment
+    # --color-scale: newer files appear brighter
+    eza --icons=always --group-directories-first --color-scale --hyperlink "$@"
+  else
+    command ls "$@"
+  fi
+}
+
+alias ll='ls -l --git --header'   # detailed list with git status
+alias la='ll -a'                  # include hidden files
+alias tree='eza --tree --level=2 --icons -I ".git|node_modules"'  # directory tree
+
 # kill test port
 # usage: kport 8080
 kport() {
