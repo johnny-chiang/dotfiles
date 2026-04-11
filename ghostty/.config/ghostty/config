@@ -21,7 +21,7 @@ cursor-style-blink = false
 shell-integration = zsh
 
 # Prevents shell integration from overriding custom cursor settings.
-shell-integration-features = no-cursor
+shell-integration-features = no-cursor,ssh-terminfo,ssh-env
 
 # Terminal Behavior
 copy-on-select = clipboard
