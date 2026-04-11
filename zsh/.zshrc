@@ -44,6 +44,9 @@ alias ll='ls -l --git --header'   # detailed list with git status
 alias la='ll -a'                  # include hidden files
 alias tree='eza --tree --level=2 --icons -I ".git|node_modules"'  # directory tree
 
+# OrbStack - Fix terminal compatibility
+alias orb='TERM=xterm-256color orb'
+
 # kill test port
 # usage: kport 8080
 kport() {
