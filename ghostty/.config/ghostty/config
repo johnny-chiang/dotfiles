@@ -19,8 +19,6 @@ window-save-state = always
 cursor-style = block
 cursor-style-blink = false
 shell-integration = zsh
-
-# Prevents shell integration from overriding custom cursor settings.
 shell-integration-features = no-cursor,ssh-terminfo,ssh-env
 
 # Terminal Behavior
