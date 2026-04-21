@@ -46,7 +46,7 @@ nnoremap <leader>w :w<cr>
 nnoremap <leader>q :q<cr>
 
 " Clear Search Highlights
-nnoremap <leader><esc> :noh<cr>
+nnoremap <C-l> :noh<cr>
 
 " Buffer Navigation (Switching between different Log/Config files)
 nnoremap H :bp<cr>
