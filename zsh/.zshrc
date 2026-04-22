@@ -43,6 +43,9 @@ ls() {
 alias ll='ls -l --git --header'   # detailed list with git status
 alias la='ll -a'                  # include hidden files
 alias tree='eza --tree --level=2 --icons -I ".git|node_modules"'  # directory tree
+alias vi='nvim'
+alias vim='nvim'
+alias view='nvim -R' # read-only mode for viewing files
 
 # OrbStack - Fix terminal compatibility
 alias orb='TERM=xterm-256color orb'
