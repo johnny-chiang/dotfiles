@@ -1,13 +1,15 @@
 brew "eza"
 brew "fnm"
 brew "gh"
+brew "git"
+brew "git-filter-repo"
 brew "go"
 brew "neovim"
 brew "ripgrep"
 brew "starship"
 brew "stow"
-
 brew "tmux"
+
 cask "alt-tab"
 cask "amethyst"
 cask "antigravity"
