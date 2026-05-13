@@ -50,6 +50,10 @@ alias view='nvim -R' # read-only mode for viewing files
 # OrbStack - Fix terminal compatibility
 alias orb='TERM=xterm-256color orb'
 
+
+# Multiapss - Fix terminal compatibility
+alias multipass='TERM=xterm-256color multipass'
+
 # kill test port
 # usage: kport 8080
 kport() {
