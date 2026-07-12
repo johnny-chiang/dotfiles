@@ -12,6 +12,7 @@ brew "tmux"
 
 cask "amethyst"
 cask "antigravity"
+cask "antigravity-cli"
 cask "claude"
 cask "claude-code"
 cask "dockdoor"
